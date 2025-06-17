@@ -242,3 +242,77 @@ body {
   50% { transform: translateY(-15px); }
   100% { transform: translateY(0px); }
 }
+
+/* ========== Hero Button ========== */
+.hero-button {
+  /* Layout */
+  display: flex;
+  width: 157.744px;
+  height: 48.537px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  align-items: center;
+  background-color: #48A6DA;
+  
+  /* Typography */
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0px 1.31px 1.965px #2663B6;
+  -webkit-text-stroke-width: 0.66px;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.20);
+  font-family: 'Inter', sans-serif; /* Fallback font */
+  font-size: 16px; /* Fallback size */
+  font-style: normal;
+  font-weight: 600; /* Fallback weight */
+  line-height: 140%;
+  
+  /* Visual Style */
+  text-decoration: none;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  box-shadow: 0px 4px 20px 0px rgba(0, 115, 168, 0.10);
+  transition: all 0.3s ease;
+  
+  
+  /* Center text vertically */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover/Active States */
+.hero-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.hero-button:active {
+  background: rgba(255, 255, 255, 0.20);
+  transform: translateY(0);
+}
+
+/* If you have CSS variables for typography */
+:root {
+  --sds-typography-body-font-family: 'Inter', sans-serif;
+  --sds-typography-body-size-medium: 16px;
+  --sds-typography-body-font-weight-strong: 600;
+}
+
+/* Apply CSS variables if they exist */
+.hero-button {
+  font-family: var(--sds-typography-body-font-family, 'Inter', sans-serif);
+  font-size: var(--sds-typography-body-size-medium, 16px);
+  font-weight: var(--sds-typography-body-font-weight-strong, 600);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-button {
+    width: 140px;
+    height: 44px;
+    font-size: 15px;
+  }
+}
