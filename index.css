@@ -566,11 +566,12 @@ body {
   }
 }
 
-
 /* ========== Footer Section ========== */
 .site-footer {
   padding: 4rem 1rem;
-  margin-top: 6rem; /* 96px gap from reviews section */
+  margin-top: 6rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .footer-content {
@@ -580,24 +581,39 @@ body {
   flex-direction: column;
   gap: 2.5rem;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .footer-left,
 .footer-right {
   display: flex;
   gap: 1.5rem;
+  position: relative;
 }
 
-.footer-left {
-  align-items: flex-end;
+/* Left side images */
+.footer-left .footer-logo:first-child {
+  height: 40px;
+  width: auto;
+}
+.footer-left .footer-logo:last-child {
+  height: 20px; /* Half of 40px */
+  width: auto;
+  transform: scaleX(-1); /* Horizontal flip */
+  align-self: flex-end;
+  margin-bottom: 5px;
 }
 
-.footer-right {
-  justify-content: flex-end;
-  align-items: flex-end;
+/* Right side images */
+.footer-right .footer-logo:first-child {
+  height: 20px; /* Half of 40px */
+  width: auto;
+  transform: scaleX(-1); /* Horizontal flip */
+  align-self: flex-end;
+  margin-bottom: 5px;
 }
-
-.footer-logo {
+.footer-right .footer-logo:last-child {
   height: 40px;
   width: auto;
 }
@@ -618,10 +634,11 @@ body {
 
 .footer-links {
   display: flex;
-  flex-direction: column; /* Changed from row to column */
-  gap: 0.75rem; /* Adjusted gap for vertical stacking */
-  align-items: center; /* Center the stacked links */
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
 }
+
 .footer-links a {
   color: #fff;
   font: 400 1rem/1.4 "Inter", sans-serif;
@@ -643,8 +660,14 @@ body {
     align-items: flex-end;
   }
   
-  .footer-logo {
+  .footer-left .footer-logo:first-child,
+  .footer-right .footer-logo:last-child {
     height: 50px;
+  }
+  
+  .footer-left .footer-logo:last-child,
+  .footer-right .footer-logo:first-child {
+    height: 25px; /* Half of 50px */
   }
   
   .footer-title {
@@ -658,7 +681,13 @@ body {
     padding: 4rem 2rem;
   }
   
-  .footer-logo {
+  .footer-left .footer-logo:first-child,
+  .footer-right .footer-logo:last-child {
     height: 60px;
+  }
+  
+  .footer-left .footer-logo:last-child,
+  .footer-right .footer-logo:first-child {
+    height: 30px; /* Half of 60px */
   }
 }
