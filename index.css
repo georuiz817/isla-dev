@@ -565,3 +565,100 @@ body {
     margin: 0 auto; /* Center the card */
   }
 }
+
+
+/* ========== Footer Section ========== */
+.site-footer {
+  padding: 4rem 1rem;
+  margin-top: 6rem; /* 96px gap from reviews section */
+}
+
+.footer-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-left {
+  align-items: flex-end;
+}
+
+.footer-right {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.footer-logo {
+  height: 40px;
+  width: auto;
+}
+
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-title {
+  color: #fff;
+  text-align: center;
+  font: 500 1.25rem/1.2 "Inter", sans-serif;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column; /* Changed from row to column */
+  gap: 0.75rem; /* Adjusted gap for vertical stacking */
+  align-items: center; /* Center the stacked links */
+}
+.footer-links a {
+  color: #fff;
+  font: 400 1rem/1.4 "Inter", sans-serif;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 0.25em;
+  transition: opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+  opacity: 0.8;
+}
+
+/* Tablet+ */
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .footer-logo {
+    height: 50px;
+  }
+  
+  .footer-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .site-footer {
+    padding: 4rem 2rem;
+  }
+  
+  .footer-logo {
+    height: 60px;
+  }
+}
