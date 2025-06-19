@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   min-height: 100vh;
@@ -16,25 +17,13 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-image: url('./images/fishBackground.png');
-  background-repeat: no-repeat;
+  background-image: url("./images/fishBackground.png");
+  background-repeat: repeat;
   background-position: center center;
   background-size: cover;
-  background-color: #001F3F;
+  background-color: #001f3f;
   min-height: 100vh;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ========== NavBar ========== */
 /* ========== NavBar ========== */
@@ -42,9 +31,9 @@ body {
 .navbar {
   padding: 12px;
   border-radius: 0px 0px 32px 32px;
-  border: 1px solid rgba(255, 255, 255, 0.20);
-  background: rgba(255, 255, 255, 0.10);
-  box-shadow: 0px 6px 20px 0px rgba(0, 115, 168, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 6px 20px 0px rgba(0, 115, 168, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -85,7 +74,7 @@ body {
 .nav-link {
   display: block;
   padding: 12px;
-  color: #FFF !important;
+  color: #fff !important;
   text-decoration: none;
   font-size: 16px;
   font-weight: 400;
@@ -101,7 +90,7 @@ body {
 .nav-link:active,
 .nav-link.active {
   font-weight: 700;
-  background: rgba(255, 255, 255, 0.20);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 /* Tablet+ (768px+) */
@@ -112,23 +101,23 @@ body {
     left: 50%;
     transform: translateX(-50%);
   }
-  
+
   .navbar-toggler {
     display: none;
   }
-  
+
   .navbar-collapse {
     display: flex !important;
     justify-content: center;
   }
-  
+
   .navbar-nav {
     flex-direction: row;
     width: auto;
     padding-top: 0;
     gap: 10px;
   }
-  
+
   .nav-link {
     padding: 8px 16px;
   }
@@ -140,15 +129,6 @@ body {
     height: 60px;
   }
 }
-
-
-
-
-
-
-
-
-
 
 /* ========== Hero Section ========== */
 /* Mobile First (base styles) */
@@ -179,7 +159,7 @@ body {
 }
 
 .hero-title {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
@@ -193,15 +173,15 @@ body {
   .hero {
     padding: 60px 30px;
   }
-  
+
   .hero-content {
     max-width: 90%;
   }
-  
+
   .hero-image {
     max-width: 250px;
   }
-  
+
   .hero-title {
     font-size: 2.5rem;
     letter-spacing: -1px;
@@ -213,15 +193,15 @@ body {
   .hero {
     padding: 80px 40px;
   }
-  
+
   .hero-content {
     max-width: 965px;
   }
-  
+
   .hero-image {
     max-width: 300px;
   }
-  
+
   .hero-title {
     font-size: 3.5rem;
     letter-spacing: -1.5px;
@@ -238,9 +218,15 @@ body {
 
 /* Floating animation */
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-15px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /* ========== Hero Button ========== */
@@ -253,30 +239,29 @@ body {
   justify-content: center;
   flex-shrink: 0;
   align-items: center;
-  background-color: #48A6DA;
-  
+  background-color: #48a6da;
+
   /* Typography */
-  color: #FFF;
+  color: #fff;
   text-align: center;
-  text-shadow: 0px 1.31px 1.965px #2663B6;
+  text-shadow: 0px 1.31px 1.965px #2663b6;
   -webkit-text-stroke-width: 0.66px;
-  -webkit-text-stroke-color: rgba(255, 255, 255, 0.20);
-  font-family: 'Inter', sans-serif; /* Fallback font */
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.2);
+  font-family: "Inter", sans-serif; /* Fallback font */
   font-size: 16px; /* Fallback size */
   font-style: normal;
   font-weight: 600; /* Fallback weight */
   line-height: 140%;
-  
+
   /* Visual Style */
   text-decoration: none;
   border-radius: 50px;
-  background: rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.20);
-  box-shadow: 0px 4px 20px 0px rgba(0, 115, 168, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 20px 0px rgba(0, 115, 168, 0.1);
   transition: all 0.3s ease;
-  
-  
+
   /* Center text vertically */
   display: flex;
   align-items: center;
@@ -290,20 +275,20 @@ body {
 }
 
 .hero-button:active {
-  background: rgba(255, 255, 255, 0.20);
+  background: rgba(255, 255, 255, 0.2);
   transform: translateY(0);
 }
 
 /* If you have CSS variables for typography */
 :root {
-  --sds-typography-body-font-family: 'Inter', sans-serif;
+  --sds-typography-body-font-family: "Inter", sans-serif;
   --sds-typography-body-size-medium: 16px;
   --sds-typography-body-font-weight-strong: 600;
 }
 
 /* Apply CSS variables if they exist */
 .hero-button {
-  font-family: var(--sds-typography-body-font-family, 'Inter', sans-serif);
+  font-family: var(--sds-typography-body-font-family, "Inter", sans-serif);
   font-size: var(--sds-typography-body-size-medium, 16px);
   font-weight: var(--sds-typography-body-font-weight-strong, 600);
 }
@@ -314,5 +299,146 @@ body {
     width: 140px;
     height: 44px;
     font-size: 15px;
+  }
+}
+/* ========== Portfolio Section ========== */
+.portfolio {
+  display: flex;
+  padding: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: calc(100% - 4rem);
+  margin: 2rem auto;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0.375rem 1.25rem rgba(0, 115, 168, 0.1);
+  backdrop-filter: blur(0.625rem);
+}
+
+.portfolio-title {
+  color: #fff;
+  text-align: center;
+  font: 600 2.25rem/1.2 "Inter", sans-serif;
+  letter-spacing: -0.04em;
+  width: 100%;
+}
+
+.portfolio-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.portfolio-card {
+  display: flex;
+  min-height: 18rem;
+  padding: 1.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0.375rem 1.25rem rgba(0, 115, 168, 0.1);
+  backdrop-filter: blur(0.625rem);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Card Hover Animation */
+.portfolio-card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.75rem 2rem rgba(0, 115, 168, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.portfolio-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0,195,255,0.1) 0%, rgba(0,115,168,0.2) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-card:hover::after {
+  opacity: 1;
+}
+
+.card-image {
+  flex: 1;
+  width: 100%;
+  border-radius: 1.5rem;
+  background: #d9d9d9;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.card-title {
+  color: #fff;
+  text-align: center;
+  font: 600 1.25rem/1.2 "Inter", sans-serif;
+  margin: 0;
+}
+
+.view-all {
+  color: #fff;
+  text-align: center;
+  font: 500 1.25rem/1.2 "Inter", sans-serif;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.view-all:hover {
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Tablet+ */
+@media (min-width: 768px) {
+  .portfolio {
+    padding: 3rem;
+    border-radius: 2rem;
+  }
+  
+  .portfolio-cards {
+    flex-direction: row;
+  }
+  
+  .portfolio-card {
+    height: 24rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .portfolio {
+    max-width: 1200px;
+    padding: 3rem;
+  }
+  
+  .portfolio-title {
+    font-size: 3rem;
   }
 }
