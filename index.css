@@ -177,6 +177,10 @@ body {
   text-shadow: 0 0 10px rgba(0, 195, 255, 0.5);
 }
 
+.small-gap{
+  margin-bottom: 48px; 
+}
+
 /* Tablet (768px+) */
 @media (min-width: 768px) {
   .hero {
@@ -698,5 +702,99 @@ body {
   .footer-left .footer-logo:last-child,
   .footer-right .footer-logo:first-child {
     height: 30px; /* Half of 60px */
+  }
+}
+
+
+
+
+
+/* About Us Page */
+.about-us-section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+}
+
+.section-title {
+  color: #FFF;
+  font-family: var(--sds-typography-heading-font-family);
+  font-size: var(--sds-typography-heading-size-large);
+  font-weight: var(--sds-typography-heading-font-weight);
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.about-card {
+  display: flex;
+  padding: 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  flex: 1 0 0;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  background: rgba(255, 255, 255, 0.10);
+  box-shadow: 0px 6px 20px 0px rgba(0, 115, 168, 0.10);
+  backdrop-filter: blur(10px);
+}
+
+.about-image {
+  flex-shrink: 0;
+}
+
+.profile-circle {
+  width: 165px;
+  height: 165px;
+  border-radius: 150px;
+  background: #D9D9D9;
+  /* Placeholder for actual image */
+  background-image: url('path-to-your-image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-heading {
+  color: #FFF;
+  font-family: var(--sds-typography-heading-font-family);
+  font-size: var(--sds-typography-heading-size-base);
+  font-weight: var(--sds-typography-heading-font-weight);
+  line-height: 120%;
+  letter-spacing: -0.48px;
+  margin-bottom: 16px;
+}
+
+.about-text {
+  color: #FFF;
+  font-family: var(--sds-typography-body-font-family);
+  font-size: var(--sds-typography-body-size-medium);
+  font-weight: var(--sds-typography-body-font-weight-regular);
+  line-height: 140%;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-card {
+    flex-direction: column;
+    padding: 32px;
+    gap: 32px;
+  }
+  
+  .profile-circle {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .about-content {
+    text-align: center;
   }
 }
