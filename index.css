@@ -26,7 +26,6 @@ body {
 }
 
 /* ========== NavBar ========== */
-/* ========== NavBar ========== */
 /* Mobile First */
 .navbar {
   padding: 12px;
@@ -162,6 +161,16 @@ body {
   color: #fff;
   text-align: center;
   font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  text-shadow: 0 0 10px rgba(0, 195, 255, 0.5);
+}
+
+.hero-title-small{
+  font-size: 48px;
+  color: #fff;
+  text-align: center;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.5px;
