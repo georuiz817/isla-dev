@@ -764,19 +764,12 @@ body {
 
 .about-heading {
   color: #FFF;
-  font-family: var(--sds-typography-heading-font-family);
-  font-size: var(--sds-typography-heading-size-base);
-  font-weight: var(--sds-typography-heading-font-weight);
-  line-height: 120%;
-  letter-spacing: -0.48px;
+  font-size: 24px;
   margin-bottom: 16px;
 }
 
 .about-text {
   color: #FFF;
-  font-family: var(--sds-typography-body-font-family);
-  font-size: var(--sds-typography-body-size-medium);
-  font-weight: var(--sds-typography-body-font-weight-regular);
   line-height: 140%;
   margin: 0;
 }
