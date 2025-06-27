@@ -167,7 +167,7 @@ body {
   text-shadow: 0 0 10px rgba(0, 195, 255, 0.5);
 }
 
-.hero-title-small{
+.hero-title-small {
   font-size: 48px;
   color: #fff;
   text-align: center;
@@ -177,8 +177,8 @@ body {
   text-shadow: 0 0 10px rgba(0, 195, 255, 0.5);
 }
 
-.small-gap{
-  margin-bottom: 48px; 
+.small-gap {
+  margin-bottom: 48px;
 }
 
 /* Tablet (768px+) */
@@ -292,20 +292,6 @@ body {
   transform: translateY(0);
 }
 
-/* If you have CSS variables for typography */
-:root {
-  --sds-typography-body-font-family: "Inter", sans-serif;
-  --sds-typography-body-size-medium: 16px;
-  --sds-typography-body-font-weight-strong: 600;
-}
-
-/* Apply CSS variables if they exist */
-.hero-button {
-  font-family: var(--sds-typography-body-font-family, "Inter", sans-serif);
-  font-size: var(--sds-typography-body-size-medium, 16px);
-  font-weight: var(--sds-typography-body-font-weight-strong, 600);
-}
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .hero-button {
@@ -313,8 +299,7 @@ body {
     height: 44px;
     font-size: 15px;
   }
-}/* ========== Portfolio Section ========== */
-
+} /* ========== Portfolio Section ========== */
 
 .portfolio-section {
   display: flex;
@@ -372,10 +357,14 @@ body {
 }
 
 .portfolio-card::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(0,195,255,0.1) 0%, rgba(0,115,168,0.2) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 195, 255, 0.1) 0%,
+    rgba(0, 115, 168, 0.2) 100%
+  );
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -437,7 +426,7 @@ body {
     gap: 2rem;
     padding: 0 2rem;
   }
-  
+
   .portfolio-card {
     width: calc(50% - 1rem);
     height: 22rem;
@@ -449,11 +438,11 @@ body {
   .portfolio-section {
     padding: 3rem 2rem;
   }
-  
+
   .portfolio-title {
     font-size: 3rem;
   }
-  
+
   .portfolio-card {
     width: calc(33.333% - 1.5rem);
     height: 24rem;
@@ -545,14 +534,14 @@ body {
     align-items: center;
     padding: 3rem;
   }
-  
+
   .review-image {
     width: 150px;
     height: 150px;
     margin: 0;
     flex-shrink: 0;
   }
-  
+
   .review-quote {
     font-size: 1.25rem;
   }
@@ -563,7 +552,7 @@ body {
   .reviews-section {
     padding: 6rem 2rem;
   }
-  
+
   .section-title {
     font-size: 2.5rem;
   }
@@ -672,17 +661,17 @@ body {
     justify-content: space-between;
     align-items: flex-end;
   }
-  
+
   .footer-left .footer-logo:first-child,
   .footer-right .footer-logo:last-child {
     height: 50px;
   }
-  
+
   .footer-left .footer-logo:last-child,
   .footer-right .footer-logo:first-child {
     height: 25px; /* Half of 50px */
   }
-  
+
   .footer-title {
     font-size: 1.5rem;
   }
@@ -693,26 +682,22 @@ body {
   .site-footer {
     padding: 4rem 2rem;
   }
-  
+
   .footer-left .footer-logo:first-child,
   .footer-right .footer-logo:last-child {
     height: 60px;
   }
-  
+
   .footer-left .footer-logo:last-child,
   .footer-right .footer-logo:first-child {
     height: 30px; /* Half of 60px */
   }
 }
 
-
-
-
-
 /* About Us Page */
 .about-us-section {
   padding: 80px 20px;
-  max-width: 1200px;
+
   margin: 0 auto;
 }
 
@@ -721,10 +706,8 @@ body {
 }
 
 .section-title {
-  color: #FFF;
-  font-family: var(--sds-typography-heading-font-family);
-  font-size: var(--sds-typography-heading-size-large);
-  font-weight: var(--sds-typography-heading-font-weight);
+  color: #fff;
+
   text-align: center;
   margin-bottom: 48px;
 }
@@ -737,9 +720,9 @@ body {
   gap: 48px;
   flex: 1 0 0;
   border-radius: 32px;
-  border: 1px solid rgba(255, 255, 255, 0.20);
-  background: rgba(255, 255, 255, 0.10);
-  box-shadow: 0px 6px 20px 0px rgba(0, 115, 168, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 6px 20px 0px rgba(0, 115, 168, 0.1);
   backdrop-filter: blur(10px);
 }
 
@@ -751,9 +734,9 @@ body {
   width: 165px;
   height: 165px;
   border-radius: 150px;
-  background: #D9D9D9;
+  background: #d9d9d9;
   /* Placeholder for actual image */
-  background-image: url('path-to-your-image.jpg');
+  background-image: url("path-to-your-image.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -763,13 +746,13 @@ body {
 }
 
 .about-heading {
-  color: #FFF;
+  color: #fff;
   font-size: 24px;
   margin-bottom: 16px;
 }
 
 .about-text {
-  color: #FFF;
+  color: #fff;
   line-height: 140%;
   margin: 0;
 }
@@ -781,12 +764,12 @@ body {
     padding: 32px;
     gap: 32px;
   }
-  
+
   .profile-circle {
     width: 120px;
     height: 120px;
   }
-  
+
   .about-content {
     text-align: center;
   }
@@ -859,7 +842,7 @@ body {
   .services-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
   }
-  
+
   .services-title {
     font-size: 40px; /* Slightly larger */
   }
@@ -870,14 +853,128 @@ body {
   .services-section {
     padding: 0 48px; /* Full padding on desktop */
   }
-  
+
   .services-grid {
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     row-gap: 48px; /* Vertical gap between rows */
     column-gap: 24px; /* Horizontal gap between cards */
   }
-  
+
   .services-title {
     font-size: 48px; /* Final size */
   }
 }
+
+
+
+/* ==========  Contact ========== */
+/* FORM CONTAINER */
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1120px;
+  padding: 32px;
+  margin: 0 auto;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 6px 20px rgba(0, 115, 168, 0.1);
+  backdrop-filter: blur(10px);
+  gap: 32px;
+}
+
+/* FORM */
+.fs-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+/* LABELS */
+.fs-label {
+  color: #fff;
+  font-size: 16px;
+   margin-bottom: 8px;
+  display: block;
+}
+
+/* INPUT FIELDS */
+.fs-input,
+.fs-textarea {
+  display: flex;
+  min-width: 240px;
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-family: inherit;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
+/* TEXTAREA */
+.fs-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* BUTTON CONTAINER */
+.fs-button-group {
+  display: flex;
+  justify-content: left;
+  margin-top: 8px;
+}
+
+/* SUBMIT BUTTON */
+.fs-button {
+  display: flex;
+  width: 158px;
+  height: 48px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  color: #fff;
+  background-color: #0073a8;
+  border: none;
+  border-radius: 8px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+
+   text-shadow: 0px 1.31px 1.965px #2663b6;
+  -webkit-text-stroke-width: 0.66px;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.2);
+
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.fs-button:hover {
+  background-color: #005d88;
+}
+
+/* RESPONSIVE IMPROVEMENTS */
+@media (min-width: 768px) {
+  .contact-card {
+    padding: 48px;
+    gap: 48px;
+  }
+
+ 
+
+  .fs-form {
+    gap: 32px;
+  }
+}
+.fs-input::placeholder,
+.fs-textarea::placeholder {
+  color:#B3B3B3; /* or a soft gray/white */
+ }
