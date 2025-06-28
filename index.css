@@ -18,11 +18,10 @@ body {
   margin: 0;
   padding: 0;
   background-image: url("./images/fishBackground.png");
-  background-repeat: repeat;
-  background-position: center center;
-  background-size: cover;
-  background-color: #001f3f;
-  min-height: 100vh;
+  background-size: 100% auto;          /* Stretches full width, keeps height ratio */
+  background-repeat: repeat-y;         /* Repeats vertically */
+  background-position: top center;     /* Aligns the image nicely */
+
 }
 
 /* ========== NavBar ========== */
