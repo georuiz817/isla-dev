@@ -245,38 +245,33 @@ body {
 .hero-button {
   /* Layout */
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 157.744px;
   height: 48.537px;
-  flex-direction: column;
-  justify-content: center;
   flex-shrink: 0;
-  align-items: center;
-  background-color: #48a6da;
-color: #fff;
-  /* Typography */
-  text-align: center;
-  text-shadow: 0px 1.31px 1.965px #2663b6;
-  -webkit-text-stroke-width: 0.66px;
-  -webkit-text-stroke-color: rgba(255, 255, 255, 0.2);
-  font-family: "Inter", sans-serif; /* Fallback font */
-  font-size: 16px; /* Fallback size */
-  font-style: normal;
-  font-weight: 600; /* Fallback weight */
-  line-height: 140%;
 
   /* Visual Style */
-  text-decoration: none;
-  border-radius: 50px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 4px 20px 0px rgba(0, 115, 168, 0.1);
-  transition: all 0.3s ease;
+  background: linear-gradient(to bottom, #8dd9f6, #40a4f5);
+  border: none;
+  border-radius: 999px;
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.2),
+    inset 0 0 10px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 
-  /* Center text vertically */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* Typography */
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  color: white;
+  text-align: center;
+  text-shadow:
+    0px 1.31px 1.965px #2663b6,
+    2px 2px 4px rgba(0, 0, 0, 0.3);
+  -webkit-text-stroke: 0.66px rgba(255, 255, 255, 0.2);
 }
 
 /* Hover/Active States */
