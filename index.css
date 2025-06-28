@@ -11,6 +11,8 @@ body {
   margin: 0;
   min-height: 100vh;
   padding: 0;
+  color: #fff;
+;
 }
 
 body {
@@ -157,8 +159,7 @@ body {
 }
 
 .hero-title {
-  color: #fff;
-  text-align: center;
+   text-align: center;
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
@@ -168,8 +169,7 @@ body {
 
 .hero-title-small {
   font-size: 48px;
-  color: #fff;
-  text-align: center;
+   text-align: center;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.5px;
@@ -252,9 +252,8 @@ body {
   flex-shrink: 0;
   align-items: center;
   background-color: #48a6da;
-
+color: #fff;
   /* Typography */
-  color: #fff;
   text-align: center;
   text-shadow: 0px 1.31px 1.965px #2663b6;
   -webkit-text-stroke-width: 0.66px;
@@ -313,8 +312,7 @@ body {
 }
 
 .portfolio-title {
-  color: #fff;
-  text-align: center;
+   text-align: center;
   font: 600 2.25rem/1.2 "Inter", sans-serif;
   letter-spacing: -0.04em;
   width: 100%;
@@ -346,6 +344,7 @@ body {
   position: relative;
   overflow: hidden;
   padding: 1.5rem;
+  color: #fff;
 }
 
 /* Card Hover Animation */
@@ -395,20 +394,19 @@ body {
 }
 
 .card-title {
-  color: #fff;
-  text-align: center;
+   text-align: center;
   font: 600 1.25rem/1.2 "Inter", sans-serif;
   margin: 0;
 }
 
 .view-all {
-  color: #fff;
-  text-align: center;
+   text-align: center;
   font: 500 1.25rem/1.2 "Inter", sans-serif;
   text-decoration: none;
   transition: all 0.3s ease;
   width: 100%;
   margin-top: 1rem;
+  color: #fff;
 }
 
 .view-all:hover {
@@ -463,8 +461,7 @@ body {
 }
 
 .section-title {
-  color: #fff;
-  text-align: center;
+   text-align: center;
   font: 600 2rem/1.2 "Inter", sans-serif;
   letter-spacing: -0.02em;
 }
@@ -503,8 +500,7 @@ body {
 }
 
 .review-quote {
-  color: #fff;
-  font: 500 1.1rem/1.5 "Inter", sans-serif;
+   font: 500 1.1rem/1.5 "Inter", sans-serif;
   margin: 0;
 }
 
@@ -515,8 +511,7 @@ body {
 }
 
 .review-author {
-  color: #fff;
-  font: 600 1.1rem/1.5 "Inter", sans-serif;
+   font: 600 1.1rem/1.5 "Inter", sans-serif;
   margin: 0;
 }
 
@@ -627,7 +622,6 @@ body {
 }
 
 .footer-title {
-  color: #fff;
   text-align: center;
   font: 500 1.25rem/1.2 "Inter", sans-serif;
   margin: 0;
@@ -696,8 +690,8 @@ body {
 /* About Us Page */
 .about-us-section {
   padding: 80px 20px;
-
   margin: 0 auto;
+  
 }
 
 .container {
@@ -705,7 +699,6 @@ body {
 }
 
 .section-title {
-  color: #fff;
 
   text-align: center;
   margin-bottom: 48px;
@@ -745,13 +738,11 @@ body {
 }
 
 .about-heading {
-  color: #fff;
   font-size: 24px;
   margin-bottom: 16px;
 }
 
 .about-text {
-  color: #fff;
   line-height: 140%;
   margin: 0;
 }
@@ -788,7 +779,6 @@ body {
 }
 
 .services-title {
-  color: #fff;
   font-size: 32px; /* Smaller on mobile */
   font-weight: 700;
   text-align: center;
@@ -818,7 +808,6 @@ body {
 }
 
 .card-title {
-  color: #fff;
   font-size: 25px;
   font-weight: 700;
   text-align: center;
@@ -828,7 +817,6 @@ body {
 }
 
 .card-text {
-  color: #fff;
   font-size: 16px;
   font-weight: 400;
   text-align: center;
@@ -891,9 +879,13 @@ body {
   width: 100%;
 }
 
+.contact-sub-heading{
+   font-size: 24px;
+
+}
+
 /* LABELS */
 .fs-label {
-  color: #fff;
   font-size: 16px;
    margin-bottom: 8px;
   display: block;
@@ -937,8 +929,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-
-  color: #fff;
+ 
   background-color: #0073a8;
   border: none;
   border-radius: 8px;
