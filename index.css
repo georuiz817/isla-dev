@@ -292,7 +292,13 @@ body {
     height: 44px;
     font-size: 15px;
   }
-} /* ========== Portfolio Section ========== */
+
+}
+
+
+
+
+/* ========== Portfolio Section ========== */
 
 .portfolio-section {
   display: flex;
@@ -380,12 +386,15 @@ body {
 .card-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   transition: transform 0.3s ease;
+  border-radius: 1.5rem;
 }
 
 .portfolio-card:hover .card-image img {
   transform: scale(1.05);
+    border-radius: 1.5rem;
+
 }
 
 .card-title {
@@ -481,11 +490,22 @@ body {
 }
 
 .review-image {
-  width: 120px;
-  height: 120px;
+  width: 125px;
+  height: 125px;
   border-radius: 50%;
   background: #d9d9d9;
-  margin: 0 auto;
+  margin: 0 auto 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .review-content {
@@ -681,6 +701,7 @@ body {
     height: 30px; /* Half of 60px */
   }
 }
+
 
 /* About Us Page */
 .about-us-section {
@@ -963,3 +984,80 @@ body {
 .fs-textarea::placeholder {
   color:#B3B3B3; /* or a soft gray/white */
  }
+
+
+ 
+ 
+/* ========== PROJECT PAGE STYLES ========== */
+.project-section {
+  display: flex;
+  padding: 0 24px 48px; /* Top, sides, bottom padding */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px; /* Space between cards */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.project-imagecard {
+  display: flex;
+ max-height: 694px; /* Flexible on mobile */
+  padding: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 6px 20px rgba(0, 115, 168, 0.1);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  margin-bottom: 48px;
+}
+
+.project-imagecard:last-child {
+  margin-bottom: 0; /* Remove margin from last card */
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+
+/* ========== TABLET SPECIFIC STYLES (768px - 1023px) ========== */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .project-section {
+      padding: 0 32px 48px; /* Slightly reduced side padding for tablet */
+  }
+
+  .project-imagecard {
+      height: 600px; /* Adjusted height for tablet */
+      min-height: unset; /* Override mobile min-height */
+      width: 100vw; /* Full viewport width */
+      margin-left: -32px; /* Counteract the section padding */
+      margin-right: -32px; /* Counteract the section padding */
+      border-radius: 0; /* Full-width cards typically look better without rounded corners */
+      padding: 32px; /* Increased padding for tablet */
+  }
+
+  .project-image {
+      border-radius: 16px; /* Slightly reduced for tablet */
+      
+  }
+}
+
+/* Desktop adjustments */
+@media (min-width: 768px) {
+  .project-section {
+      padding: 0 48px 48px; /* Larger side padding on desktop */
+  }
+  
+  .project-imagecard {
+      height: 694px; /* Fixed height on desktop */
+  }
+}
