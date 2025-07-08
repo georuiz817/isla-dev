@@ -373,22 +373,17 @@ body {
 }
 
 .card-image {
-  flex: 1;
+  aspect-ratio: 3/ 2; /* or match your image shape */
   width: 100%;
   border-radius: 1.5rem;
-   
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .card-image img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
-  transition: transform 0.3s ease;
-  border-radius: 1.5rem;
+  object-fit: cover;
+  object-position: center;
 }
 
 .portfolio-card:hover .card-image img {
@@ -490,8 +485,8 @@ body {
 }
 
 .review-image {
-  width: 125px;
-  height: 125px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background: #d9d9d9;
   margin: 0 auto 15px;
@@ -507,6 +502,8 @@ body {
   object-fit: fill;
   display: block;
 }
+
+ 
 
 .review-content {
   display: flex;
@@ -545,8 +542,8 @@ body {
   }
 
   .review-image {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     margin: 0;
     flex-shrink: 0;
   }
@@ -577,130 +574,7 @@ body {
   }
 }
 
-/* ========== Footer Section ========== */
-.site-footer {
-  padding: 4rem 1rem;
-  margin-top: 6rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.footer-content {
-  max-width: 1280px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-  align-items: center;
-  position: relative;
-  z-index: 2;
-}
-
-.footer-left,
-.footer-right {
-  display: flex;
-  gap: 1.5rem;
-  position: relative;
-}
-
-/* Left side images */
-.footer-left .footer-logo:first-child {
-  height: 40px;
-  width: auto;
-}
-.footer-left .footer-logo:last-child {
-  height: 20px; /* Half of 40px */
-  width: auto;
-  transform: scaleX(-1); /* Horizontal flip */
-  align-self: flex-end;
-  margin-bottom: 5px;
-}
-
-/* Right side images */
-.footer-right .footer-logo:first-child {
-  height: 20px; /* Half of 40px */
-  width: auto;
-  transform: scaleX(-1); /* Horizontal flip */
-  align-self: flex-end;
-  margin-bottom: 5px;
-}
-.footer-right .footer-logo:last-child {
-  height: 40px;
-  width: auto;
-}
-
-.footer-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
-.footer-title {
-  text-align: center;
-  font: 500 1.25rem/1.2 "Inter", sans-serif;
-  margin: 0;
-}
-
-.footer-links {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  align-items: center;
-}
-
-.footer-links a {
-  color: #fff;
-  font: 400 1rem/1.4 "Inter", sans-serif;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-  text-underline-offset: 0.25em;
-  transition: opacity 0.3s ease;
-}
-
-.footer-links a:hover {
-  opacity: 0.8;
-}
-
-/* Tablet+ */
-@media (min-width: 768px) {
-  .footer-content {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-
-  .footer-left .footer-logo:first-child,
-  .footer-right .footer-logo:last-child {
-    height: 50px;
-  }
-
-  .footer-left .footer-logo:last-child,
-  .footer-right .footer-logo:first-child {
-    height: 25px; /* Half of 50px */
-  }
-
-  .footer-title {
-    font-size: 1.5rem;
-  }
-}
-
-/* Desktop */
-@media (min-width: 1024px) {
-  .site-footer {
-    padding: 4rem 2rem;
-  }
-
-  .footer-left .footer-logo:first-child,
-  .footer-right .footer-logo:last-child {
-    height: 60px;
-  }
-
-  .footer-left .footer-logo:last-child,
-  .footer-right .footer-logo:first-child {
-    height: 30px; /* Half of 60px */
-  }
-}
+ 
 
 
 /* About Us Page */
@@ -1065,4 +939,47 @@ body {
     justify-content: center;
     align-items: center;
   }
+}
+
+
+
+/* ========== Footer Section ========== */
+.site-footer {
+  padding: 4rem 1rem;
+  
+  color: #fff;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-title {
+  font: 500 1.25rem/1.2 "Inter", sans-serif;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.footer-links a {
+  color: #fff;
+  font: 400 1rem/1.4 "Inter", sans-serif;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+  transition: opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+  opacity: 0.7;
 }
