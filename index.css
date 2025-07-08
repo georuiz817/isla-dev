@@ -1052,12 +1052,17 @@ body {
 }
 
 /* Desktop adjustments */
-@media (min-width: 768px) {
+/* Desktop adjustments */
+@media (min-width: 1024px) {
   .project-section {
-      padding: 0 48px 48px; /* Larger side padding on desktop */
+    padding: 0 48px 48px; /* Larger side padding on desktop */
   }
-  
+
   .project-imagecard {
-      height: 694px; /* Fixed height on desktop */
+    max-width: 694px; /* Fixed max width on desktop */
+    max-height: 694px;
+    margin: 0 auto 48px auto; /* Center the cards horizontally and preserve bottom margin */
+    justify-content: center;
+    align-items: center;
   }
 }
