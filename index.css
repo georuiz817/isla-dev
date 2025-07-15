@@ -1,4 +1,5 @@
 /* ========== GLOBAL ========== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +15,13 @@ body {
   color: #fff;
 ;
 }
+
+/* In your main CSS file */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+ 
 
 body {
   height: 100%;
@@ -298,156 +306,164 @@ body {
 
 
 
-  /* ========== Portfolio Section ========== */
+ /* ========== Portfolio Section ========== */
+/* ========== Portfolio Section ========== */
+.portfolio-section {
+  display: flex;
+  padding: 2rem 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
 
-  .portfolio-section {
-    display: flex;
-    padding: 2rem 1rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-  }
+.portfolio-title {
+  text-align: center;
+  font: 600 2.25rem/1.2 "Inter", sans-serif;
+  letter-spacing: -0.04em;
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #fff;
+}
 
-  .portfolio-title {
-    text-align: center;
-    font: 600 2.25rem/1.2 "Inter", sans-serif;
-    letter-spacing: -0.04em;
-    width: 100%;
-    margin-bottom: 1rem;
-  }
+.portfolio-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  padding: 0 1rem;
+}
 
-  .portfolio-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 100%;
-    padding: 0 1rem;
-  }
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0.375rem 1.25rem rgba(0, 115, 168, 0.1);
+  backdrop-filter: blur(0.625rem);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 1.5rem;
+  color: #fff;
+}
 
-  .portfolio-card {
-    display: flex;
-    min-height: 18rem;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    border-radius: 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0.375rem 1.25rem rgba(0, 115, 168, 0.1);
-    backdrop-filter: blur(0.625rem);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    padding: 1.5rem;
-    color: #fff;
-  }
+/* Card Hover Animation */
+.portfolio-card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.75rem 2rem rgba(0, 115, 168, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}
 
-  /* Card Hover Animation */
-  .portfolio-card:hover {
-    transform: translateY(-0.5rem);
-    box-shadow: 0 0.75rem 2rem rgba(0, 115, 168, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
-  }
+.card-image-container {
+  width: 100%;
+  height: 200px; /* Fixed height for all images */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+}
 
-  .portfolio-card::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      135deg,
-      rgba(0, 195, 255, 0.1) 0%,
-      rgba(0, 115, 168, 0.2) 100%
-    );
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-
-  .portfolio-card:hover::after {
-    opacity: 1;
-  }
-
-  .card-image {
-    width: 100%;
-    height: 100%; /* Add this to take up a consistent portion of the card */
-    border-radius: 1.5rem;
-    overflow: hidden;
+.card-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-image img {
-    width: 100%;
-    height: 100%; /* Change from object-fit: fill to this */
-    object-fit: cover; /* This will crop the image to fill the space */
-    transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+ 
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
+  transition: transform 0.3s ease;
 }
 
-  .portfolio-card:hover .card-image img {
-    transform: scale(1.05);
-      border-radius: 1.5rem;
+.portfolio-card:hover .card-image img {
+  transform: scale(1.05);
+}
 
+.card-title {
+  text-align: center;
+  font: 600 1.25rem/1.2 "Inter", sans-serif;
+  margin: 0;
+  width: 100%;
+}
+
+.view-all {
+  display: inline-block;
+  text-align: center;
+  font: 500 1.25rem/1.2 "Inter", sans-serif;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.view-all:hover {
+  background: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+/* Tablet+ */
+@media (min-width: 768px) {
+  .portfolio-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 2rem;
   }
 
-  .card-title {
-    text-align: center;
-    font: 600 1.25rem/1.2 "Inter", sans-serif;
-    margin: 0;
-  } 
-
-  .view-all {
-    text-align: center;
-    font: 500 1.25rem/1.2 "Inter", sans-serif;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    width: 100%;
-    margin-top: 1rem;
-    color: #fff;
+  .portfolio-card {
+    width: calc(50% - 1rem);
   }
 
-  .view-all:hover {
-    text-decoration: underline;
-    color: rgba(255, 255, 255, 0.8);
+  .card-image-container {
+    height: 220px; /* Slightly taller on tablets */
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .portfolio-section {
+    padding: 3rem 2rem;
   }
 
-  /* Tablet+ */
-  @media (min-width: 768px) {
-    .portfolio-cards {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      padding: 0 2rem;
-    }
-
-    .portfolio-card {
-      width: calc(50% - 1rem);
-      height: 22rem;
-    }
+  .portfolio-title {
+    font-size: 3rem;
   }
 
-  /* Desktop */
-  @media (min-width: 1024px) {
-    .portfolio-section {
-      padding: 3rem 2rem;
-    }
-
-    .portfolio-title {
-      font-size: 3rem;
-    }
-
-    .portfolio-card {
-      width: calc(33.333% - 1.5rem);
-      height: 24rem;
-    }
-    .card-image img{
-      height: 100%;
-      width: 100%;
-    }
+  .portfolio-card {
+    width: calc(33.333% - 1.5rem);
   }
+
+  .card-image-container {
+    height: 240px; /* Taller on desktop */
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1400px) {
+  .card-image-container {
+    height: 260px; /* Tallest on large screens */
+  }
+}
+
+
+
 
 /* ========== Reviews Section ========== */
 .reviews-section {
@@ -613,6 +629,7 @@ body {
 
 .about-image {
   flex-shrink: 0;
+  
 }
 
 .profile-circle {
@@ -621,9 +638,7 @@ body {
   border-radius: 150px;
   background: #d9d9d9;
   /* Placeholder for actual image */
-  background-image: url("path-to-your-image.jpg");
-  background-size: cover;
-  background-position: center;
+
 }
 
 .about-content {
@@ -949,8 +964,7 @@ body {
 /* ========== Footer Section ========== */
 .site-footer {
   padding: 4rem 1rem;
- 
-  color: #fff;
+   color: #fff;
   text-align: center;
   font-synthesis: none; /* Prevents browser font manipulation */
   text-rendering: optimizeLegibility;
@@ -989,3 +1003,5 @@ body {
 .footer-links a:hover {
   opacity: 0.7;
 }
+
+ 
