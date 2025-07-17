@@ -20,19 +20,20 @@ body {
 body {
   font-family: 'Inter', sans-serif;
 }
-
  
-
 body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-image: url("./images/fishBackground.png");
+  background-image:    linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(255,255,255,0.1)),
+ url("./images/fishBackground.png");
   background-size: 100% auto;          /* Stretches full width, keeps height ratio */
   background-repeat: repeat-y;         /* Repeats vertically */
   background-position: top center;     /* Aligns the image nicely */
-
+ 
 }
+
+
 
 /* ========== NavBar ========== */
 /* Mobile First */
@@ -936,7 +937,7 @@ body {
       width: 100vw; /* Full viewport width */
       margin-left: -32px; /* Counteract the section padding */
       margin-right: -32px; /* Counteract the section padding */
-      border-radius: 0; /* Full-width cards typically look better without rounded corners */
+      border-radius: 32px; /* Full-width cards typically look better without rounded corners */
       padding: 32px; /* Increased padding for tablet */
   }
 
